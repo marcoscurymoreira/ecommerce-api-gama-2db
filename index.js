@@ -32,6 +32,7 @@ app.get('/produto', (req, res) => {
 
 
 
+
 //2- GET RETORNANDO UM PRODUTO PELO ID ---- FALTA TRATAR RETORNO DE ID INEXISTENTE
 app.get('/produto/:id', (req, res) => {
 
