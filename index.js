@@ -32,27 +32,16 @@ app.get('/produto', (req, res) => {
 
 
 
-
-//2- GET RETORNANDO UM PRODUTO PELO ID ---- FALTA TRATAR RETORNO DE ID INEXISTENTE
+//2- GET RETORNANDO UM PRODUTO PELO ID - OK
 app.get('/produto/:id', (req, res) => {
-
-    connection.query('SELECT * FROM produtos WHERE id = ' + req.params.id, function (err, rows, fields) {
-        if (err) throw err
-
-        try {
-            for (i = 0; i < rows.length; i++){
-                if (req.params.id == rows[i].id){
-                    res.send(rows[i]);
-                }
-                else{
-                    res.sendStatus(404)
-                }
-            }
-        } catch (err) {
-            console.log(err)
+    connection.query('SELECT * FROM produtos where id =' + req.params.id, function (err, rows, fields) {
+        if (req.params.id =! rows[0]) {
+            res.status(404).json('Erro 404, produto não encontrado')
         }
-      })
-      
+        else {
+            res.json(rows)
+        }
+    });
 })
 
 
@@ -90,11 +79,16 @@ app.get('/departamento', (req, res) => {
 
 
 //6 - GET RETORNANDO A LISTA DE TODOS OS PRODUTOS POR DEPARTAMENTO
-
-
-
-
-
+app.get('/departamento/:id', (req, res) => {
+    connection.query('select * from produtos inner join departamentos on produtos.departamento = departamentos.id where departamentos.id =' + req.params.id, function (err, rows, fields) {
+        if (req.params.id =! rows[0]) {
+            res.status(404).json('Erro 404, produto não encontrado')
+        }
+        else {
+            res.json(rows)
+        }
+    });
+})
 
 
 
