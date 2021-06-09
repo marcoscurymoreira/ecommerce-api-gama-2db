@@ -82,7 +82,7 @@ app.get('/departamento', (req, res) => {
 app.get('/departamento/:id', (req, res) => {
     connection.query('select * from produtos inner join departamentos on produtos.departamento = departamentos.id where departamentos.id =' + req.params.id, function (err, rows, fields) {
         if (req.params.id =! rows[0]) {
-            res.status(404).json('Erro 404, produto não encontrado')
+            res.status(404).json('Erro 404, departamento não encontrado')
         }
         else {
             res.json(rows)
