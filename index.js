@@ -1,11 +1,11 @@
 const express = require('express')
-var mysql = require('mysql2') //incluindo o pacote do MySQL2
+const mysql = require('mysql2') //incluindo o pacote do MySQL2
 
 const app = express()
 app.use(express.json());
 const port = 3000
 
-var connection = mysql.createConnection({ //preparando a conexão com DB
+const connection = mysql.createConnection({ //preparando a conexão com DB
     host: 'localhost',
     user: 'root',
     password: 'root',
