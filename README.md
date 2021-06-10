@@ -19,9 +19,9 @@ Trata-se de uma RESP API para um e-commerce. Utilizando os métodos e arquitetur
 
 
 ># E aí, como eu uso?
-* Primeiro de tudo, vamos importar nosso banco de dados todo prontinho? Você pode encontrar os scripts SQL bem [aqui no repositório.](https://github.com/marcoscurymoreira/ecommerce-api-gama-2db/tree/main/script_db_mysql)
+* Antes de tudo, tá aqui o link para o projeto no GitHub caso você tenha conseguido este README de formas misteriosas: [GitHub.](https://github.com/marcoscurymoreira/ecommerce-api-gama-2db.git "Você vai precisar me clonar, mas não sou a ovelha Dolly")
 
-* Link para o projeto: [GitHub](https://github.com/marcoscurymoreira/ecommerce-api-gama-2db.git "Você vai precisar me clonar, mas não sou a ovelha Dolly")
+* Agora, vamos importar nosso banco de dados todo prontinho? Você pode encontrar os scripts SQL bem [aqui no repositório.](https://github.com/marcoscurymoreira/ecommerce-api-gama-2db/tree/main/script_db_mysql "Achei muito estranho os preços destes produtos.") Depois de baixar o arquivo, é só criar seu schema no MySQL, rodar o script e _voilà_, o banco de dados está pronto para ser usado.
 
 * Clone o projeto **_$ git clone https://github.com/marcoscurymoreira/ecommerce-api-gama-2db.git_**
   
