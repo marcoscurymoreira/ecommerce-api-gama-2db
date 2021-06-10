@@ -5,7 +5,7 @@
 
 
 ># O que fizemos?
-V.2 da nossa API, desta vez com conexão ao banco de dados MySQL. Trata-se de uma RESP API para um e-commerce. Utilizando os métodos e arquitetura REST, desenvolvemos um projeto para apresentar todo o estoque do e-commerce, buscar um produto específico, incluir novos produtos e alterar dados de produtos existentes.
+Trata-se de uma RESP API para um e-commerce. Utilizando os métodos e arquitetura REST, desenvolvemos um projeto para apresentar todo o estoque do e-commerce, buscar um produto específico, incluir novos produtos e alterar dados de produtos existentes. <ins>Versão 2.0 da nossa API, desta vez criando a conexão ao banco de dados MySQL e utilizando os dados que lá estão.</ins>
 <br></br>
 
 
@@ -19,17 +19,19 @@ V.2 da nossa API, desta vez com conexão ao banco de dados MySQL. Trata-se de um
 
 
 ># E aí, como eu uso?
-* Primeiro de tudo, vamos importar nosso banco de dados todo prontinho? Você pode encontrar os scripts SQL bem [aqui.]()
+* Antes de tudo, tá aqui o link para o projeto no GitHub, caso você tenha conseguido este README de formas misteriosas: [GitHub.](https://github.com/marcoscurymoreira/ecommerce-api-gama-2db.git "Você vai precisar me clonar, mas não sou a ovelha Dolly")
 
-* Link para o projeto: [GitHub](https://github.com/marcoscurymoreira/ecommerce-api-gama.git/ "Você vai precisar me clonar, mas não sou a ovelha Dolly")
+* Agora, vamos importar nosso banco de dados todo prontinho? Você pode encontrar os scripts SQL bem [aqui no repositório.](https://github.com/marcoscurymoreira/ecommerce-api-gama-2db/tree/main/script_db_mysql "Achei muito estranho os preços destes produtos.") Depois de baixar o arquivo, é só criar seu schema no MySQL, rodar o script e _voilà_, o banco de dados está pronto para ser usado.
 
-* Clone o projeto **_$ git clone https://github.com/marcoscurymoreira/ecommerce-api-gama.git_**
+* Faça um clone deste repositório **_$ git clone https://github.com/marcoscurymoreira/ecommerce-api-gama-2db.git_**
   
-* Entre no repositório criado **$ cd _ecommerce-api-gama_**
+* Entre no repositório criado **$ cd _ecommerce-api-gama-2db_**
 
-* Instale o Express **_$ npm i express_**
+* Rode o  **_$ npm install_** para instalar as dependências.
+
+* Altere suas credencias para acesso ao banco de dados no index.js, incluindo seu user, password e database.
   
-* Suba o servidor **_$ npm start_**.
+* Suba o servidor com o comando **_$ npm start_**.
   
 * Vamos precisar também de uma plataforma para os testes da nossa API. Existem algumas opções no mercado, mas nós utilizamos o [Postman](https://www.postman.com/ "Eu não sou o homem poste. ¬¬"). Você pode baixá-lo [aqui](https://www.postman.com/downloads/ "Clique sem medo, não sou um vírus") ou escolher outro de sua preferência.
 <br></br>
@@ -94,4 +96,3 @@ Ok, clonamos o projeto, instalamos o que era necessário e nosso servidor está 
 ># Quem somos?
 * <a href="https://github.com/anderleyson" target="_blank">Anderley Quinteiro</a>
 * <a href="https://github.com/marcoscurymoreira" target="_blank">Marcos Moreira</a>
-* Victor Reginato
