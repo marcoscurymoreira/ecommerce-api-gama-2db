@@ -5,7 +5,7 @@
 
 
 ># O que fizemos?
-V.2 da nossa API, desta vez com conexão ao banco de dados MySQL. Trata-se de uma RESP API para um e-commerce. Utilizando os métodos e arquitetura REST, desenvolvemos um projeto para apresentar todo o estoque do e-commerce, buscar um produto específico, incluir novos produtos e alterar dados de produtos existentes.
+Trata-se de uma RESP API para um e-commerce. Utilizando os métodos e arquitetura REST, desenvolvemos um projeto para apresentar todo o estoque do e-commerce, buscar um produto específico, incluir novos produtos e alterar dados de produtos existentes. <ins>Versão 2.0 da nossa API, desta vez criando a conexão ao banco de dados MySQL e utilizando os dados que lá estão.</ins>
 <br></br>
 
 
@@ -19,13 +19,13 @@ V.2 da nossa API, desta vez com conexão ao banco de dados MySQL. Trata-se de um
 
 
 ># E aí, como eu uso?
-* Primeiro de tudo, vamos importar nosso banco de dados todo prontinho? Você pode encontrar os scripts SQL bem [aqui.]()
+* Primeiro de tudo, vamos importar nosso banco de dados todo prontinho? Você pode encontrar os scripts SQL bem [aqui no repositório.](https://github.com/marcoscurymoreira/ecommerce-api-gama-2db/tree/main/script_db_mysql)
 
-* Link para o projeto: [GitHub](https://github.com/marcoscurymoreira/ecommerce-api-gama.git/ "Você vai precisar me clonar, mas não sou a ovelha Dolly")
+* Link para o projeto: [GitHub](https://github.com/marcoscurymoreira/ecommerce-api-gama-2db.git "Você vai precisar me clonar, mas não sou a ovelha Dolly")
 
-* Clone o projeto **_$ git clone https://github.com/marcoscurymoreira/ecommerce-api-gama.git_**
+* Clone o projeto **_$ git clone https://github.com/marcoscurymoreira/ecommerce-api-gama-2db.git_**
   
-* Entre no repositório criado **$ cd _ecommerce-api-gama_**
+* Entre no repositório criado **$ cd _ecommerce-api-gama-2db_**
 
 * Instale o Express **_$ npm i express_**
   
@@ -94,4 +94,3 @@ Ok, clonamos o projeto, instalamos o que era necessário e nosso servidor está 
 ># Quem somos?
 * <a href="https://github.com/anderleyson" target="_blank">Anderley Quinteiro</a>
 * <a href="https://github.com/marcoscurymoreira" target="_blank">Marcos Moreira</a>
-* Victor Reginato
