@@ -29,7 +29,9 @@ Trata-se de uma RESP API para um e-commerce. Utilizando os métodos e arquitetur
 
 * Instale o Express **_$ npm i express_**
 
-* Altere suas credencias no index.js: <img src='./imgpaste/2021-06-03-14-42-26.png'> 
+* Altere suas credencias no index.js:
+  
+  <img src='./images/connection_db.png'>
   
 * Suba o servidor **_$ npm start_**.
   
