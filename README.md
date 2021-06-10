@@ -27,13 +27,11 @@ Trata-se de uma RESP API para um e-commerce. Utilizando os métodos e arquitetur
   
 * Entre no repositório criado **$ cd _ecommerce-api-gama-2db_**
 
-* Instale o Express **_$ npm i express_**
+* Rode o  **_$ npm install_** para instalar as dependências.
 
-* Altere suas credencias no index.js:
+* Altere suas credencias para acesso ao banco de dados no index.js, incluindo seu user, password e database.
   
-  <img src='./images/connection_db.png'>
-  
-* Suba o servidor **_$ npm start_**.
+* Suba o servidor com o comando **_$ npm start_**.
   
 * Vamos precisar também de uma plataforma para os testes da nossa API. Existem algumas opções no mercado, mas nós utilizamos o [Postman](https://www.postman.com/ "Eu não sou o homem poste. ¬¬"). Você pode baixá-lo [aqui](https://www.postman.com/downloads/ "Clique sem medo, não sou um vírus") ou escolher outro de sua preferência.
 <br></br>
