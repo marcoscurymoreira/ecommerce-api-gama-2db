@@ -1,5 +1,3 @@
-# Loading...
-
 **<h1 align="center"> <ins>API REST</ins> </h1>**
 
 
