@@ -57,29 +57,12 @@ app.post("/produto", (req, res) => {
         req.body.preco <= 0 ||
         req.body.departamento <= 0
     ) {
-        return res
-            .status(400)
-            .send({
-                message:
-                    "Dados inseridos de forma incorreta. Verifique os dados informados e tente novamente.",
-            });
+        return res.status(400).send({ message: "Dados inseridos de forma incorreta. Verifique os dados informados e tente novamente." });
     } else {
-        connection.query(
-            'INSERT INTO desafio_grupo_2.produtos (descricao, preco, departamento) VALUES ("' +
-            req.body.descricao +
-            '", ' +
-            req.body.preco +
-            ", " +
-            req.body.departamento +
-            ")",
+        connection.query('INSERT INTO desafio_grupo_2.produtos (descricao, preco, departamento) VALUES ("' + req.body.descricao + '", ' + req.body.preco + ", " + req.body.departamento + ")",
             (err) => {
                 if (err) {
-                    return res
-                        .status(400)
-                        .send({
-                            message:
-                                "Dados inseridos de forma incorreta. Verifique os dados informados e tente novamente.",
-                        });
+                    return res.status(400).send({ message: "Dados inseridos de forma incorreta. Verifique os dados informados e tente novamente." });
                 }
                 res.status(201).send({ message: "Dados inseridos com sucesso." });
             }
@@ -101,20 +84,15 @@ app.put("/produto/:id", (req, res) => {
         !req.body.preco ||
         !req.body.departamento
     ) {
-        return res
-            .status(400)
-            .send({
-                message:
-                    "Dados inseridos de forma incorreta. Verifique os dados informados e tente novamente.",
-            });
+        return res.status(400).send({ message: "Dados inseridos de forma incorreta. Verifique os dados informados e tente novamente." });
     } else {
-        connection.query(
-            'UPDATE desafio_grupo_2.produtos SET descricao = "' +
-            req.body.descricao +
-            '", preco = ' +
-            req.body.preco +
-            " WHERE id = " +
-            req.params.id,
+        connection.query(`
+            UPDATE desafio_grupo_2.produtos SET
+                descricao = '${req.body.descricao}',
+                preco = ${req.body.preco},
+                departamento = ${req.body.departamento}
+            WHERE id = ${req.params.id}`,
+            
             (err, result, fields) => {
                 if (result.affectedRows == 0) {
                     res.status(404).json({ message: "Produto não encontrado. Verifique o ID e tente novamente!" });
@@ -150,9 +128,7 @@ app.get("/departamento/:id", (req, res) => {
         req.params.id,
         function (err, rows, fields) {
             if ((req.params.id = !rows[0])) {
-                res
-                    .status(404)
-                    .json({ message: "Departamento não encontrado. Informe um ID válido." });
+                res.status(404).json({ message: "Departamento não encontrado. Informe um ID válido." });
             } else {
                 res.json(rows);
             }
