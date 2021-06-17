@@ -11,6 +11,7 @@ const connection = mysql.createConnection({
     user: "root",
     password: "root",
     database: "desafio_grupo_2",
+    multipleStatements: true
 });
 
 connection.connect(); //conectando com o DB
